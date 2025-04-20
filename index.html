@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>소공 중간시험</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    .question { margin-bottom: 20px; }
+    .answer { display: none; color: green; margin-top: 5px; }
+    button { margin-top: 5px; }
+  </style>
+  <script>
+    function showAnswer(id) {
+      const answer = document.getElementById(id);
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>소프트웨어공학 중간시험</h1>
+  <div class="question">
+    <strong>1. 소프트웨어 공학의 정의로 가장 적절한 것은?</strong><br>
+    a) 최신 프로그래밍 기술을 적용하는 학문<br>
+    b) 소프트웨어 개발, 운용, 유지보수 등의 전 과정을 체계적이고 정량적으로 다루는 학문<br>
+    c) 소프트웨어 디자인 패턴을 연구하는 학문<br>
+    d) 소프트웨어 테스트 자동화 기술을 개발하는 학문<br>
+    <button onclick="showAnswer('a1')">정답 보기</button>
+    <div id="a1" class="answer">정답: b</div>
+  </div>
+
+  <div class="question">
+    <strong>2. 애자일 개발 방법론의 특징이 아닌 것은?</strong><br>
+    a) 반복적인 개발<br>
+    b) 변화에 대한 대응<br>
+    c) 계획 중심의 개발<br>
+    d) 작동하는 소프트웨어의 빠른 제공<br>
+    <button onclick="showAnswer('a2')">정답 보기</button>
+    <div id="a2" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>3. UML(Unified Modeling Language)의 2 가지 주요 다이어그램 유형은?</strong><br>
+    a) 데이터 흐름 다이어그램, 상태 전이 다이어그램<br>
+    b) 구조 다이어그램, 행위 다이어그램<br>
+    c) 순서 다이어그램, 배치 다이어그램<br>
+    d) 프로세스 다이어그램, 기능 다이어그램<br>
+    <button onclick="showAnswer('a3')">정답 보기</button>
+    <div id="a3" class="answer">정답: b</div>
+  </div>
+
+  <div class="question">
+    <strong>4. SRS의 주요 목적은?</strong><br>
+    a) 소프트웨어 설계 과정 설명<br>
+    b) 소프트웨어 테스트 계획 수립<br>
+    c) 소프트웨어 개발에 필요한 모든 요구사항을 포함한 공식 문서<br>
+    d) 소프트웨어 구현 코드 제공<br>
+    <button onclick="showAnswer('a4')">정답 보기</button>
+    <div id="a4" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>5. 애자일 개발에서 '스프린트'의 설명은?</strong><br>
+    a) 요구사항을 정의하는 단계<br>
+    b) 소프트웨어 설계의 기본 단위<br>
+    c) 반복적인 개발 주기<br>
+    d) 소프트웨어 테스트를 수행하는 단계<br>
+    <button onclick="showAnswer('a5')">정답 보기</button>
+    <div id="a5" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>6. 데이터 중심 시스템에 적합한 아키텍처 스타일은?</strong><br>
+    a) 파이프-필터 스타일<br>
+    b) 계층형 스타일<br>
+    c) 공유 저장소 스타일<br>
+    d) 클라이언트-서버 스타일<br>
+    <button onclick="showAnswer('a6')">정답 보기</button>
+    <div id="a6" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>7. '검증(Validation)'의 목적은?</strong><br>
+    a) 소프트웨어가 사양에 맞게 구현되었는지 확인<br>
+    b) 소프트웨어가 사용자의 요구를 충족하는지 확인<br>
+    c) 소프트웨어의 성능을 측정<br>
+    d) 소프트웨어의 결함을 수정<br>
+    <button onclick="showAnswer('a7')">정답 보기</button>
+    <div id="a7" class="answer">정답: b</div>
+  </div>
+
+  <div class="question">
+    <strong>8. '품질' 평가 요소가 아닌 것은?</strong><br>
+    a) 효율성<br>
+    b) 신뢰성<br>
+    c) 사용성<br>
+    d) 개발자 숙련도<br>
+    <button onclick="showAnswer('a8')">정답 보기</button>
+    <div id="a8" class="answer">정답: d</div>
+  </div>
+
+  <div class="question">
+    <strong>9. '개인과 상호작용'을 강조하는 이유는?</strong><br>
+    a) 개발 과정의 자동화<br>
+    b) 문서 작성의 효율성 증대<br>
+    c) 팀 협업 및 의사소통 중요성 강조<br>
+    d) 프로세스 개선 용이<br>
+    <button onclick="showAnswer('a9')">정답 보기</button>
+    <div id="a9" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>10. 소프트웨어 아키텍처 설계의 주요 요소가 아닌 것은?</strong><br>
+    a) 아키텍처 설계 프로세스<br>
+    b) 아키텍처 스타일<br>
+    c) 아키텍처 패턴<br>
+    d) 품질 기반 설계<br>
+    <button onclick="showAnswer('a10')">정답 보기</button>
+    <div id="a10" class="answer">정답: 없음 (모두 주요 요소임)</div>
+  </div>
+  <div class="question">
+    <strong>11. 애자일 개발의 장점이 아닌 것은?</strong><br>
+    a) 고객의 우선순위 반영 용이<br>
+    b) 팀 의사결정 자율성 보장<br>
+    c) 변화에 대한 통제 용이<br>
+    d) 잦은 업데이트 지원<br>
+    <button onclick="showAnswer('a11')">정답 보기</button>
+    <div id="a11" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>12. 프로토타입의 주요 목적은?</strong><br>
+    a) 최종 제품 출시<br>
+    b) 성능 테스트<br>
+    c) 요구사항 확인 및 설계 검증<br>
+    d) 코드 재사용성 증진<br>
+    <button onclick="showAnswer('a12')">정답 보기</button>
+    <div id="a12" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>13. 소프트웨어 위기의 증상이 아닌 것은?</strong><br>
+    a) 프로젝트 일정 지연<br>
+    b) 예산 초과<br>
+    c) 높은 품질의 소프트웨어<br>
+    d) 고객 요구사항 불충족<br>
+    <button onclick="showAnswer('a13')">정답 보기</button>
+    <div id="a13" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>14. 애자일이 변화에 대응을 강조하는 이유는?</strong><br>
+    a) 계획 변경의 어려움 해소<br>
+    b) 고객 요구사항의 불확실성 감소<br>
+    c) 개발 문서화 간소화<br>
+    d) 개발 프로세스 표준화<br>
+    <button onclick="showAnswer('a14')">정답 보기</button>
+    <div id="a14" class="answer">정답: b</div>
+  </div>
+
+  <div class="question">
+    <strong>15. '아키텍처 뷰'의 역할은?</strong><br>
+    a) 시스템의 기능적 요구사항 정의<br>
+    b) 시스템의 데이터 구조 설계<br>
+    c) 아키텍처를 다양한 관점에서 기술<br>
+    d) 시스템의 배포 환경 정의<br>
+    <button onclick="showAnswer('a15')">정답 보기</button>
+    <div id="a15" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>16. 유지보수의 중요성이 강조되는 이유는?</strong><br>
+    a) 초기 개발 비용 절감<br>
+    b) 새로운 기술 도입 용이<br>
+    c) 소프트웨어의 장기적인 사용 및 가치 유지<br>
+    d) 개발 생산성 향상<br>
+    <button onclick="showAnswer('a16')">정답 보기</button>
+    <div id="a16" class="answer">정답: c</div>
+  </div>
+
+  <div class="question">
+    <strong>17. Use Case 구성 요소 간 관계에 포함되지 않는 것은?</strong><br>
+    a) Generalization<br>
+    b) Include<br>
+    c) Extend<br>
+    d) Composition<br>
+    <button onclick="showAnswer('a17')">정답 보기</button>
+    <div id="a17" class="answer">정답: d</div>
+  </div>
+
+  <div class="question">
+    <strong>18. 비기능적 요구사항에 대한 설명 중 옳지 않은 것은?</strong><br>
+    a) 시스템의 처리량, 반응시간 등의 성능 요구는 비기능적 요구가 아니다<br>
+    b) "3초 이내에 화면이 보여야 한다"는 비기능적 요구사항이 아니다<br>
+    c) safety, security 요구는 비기능적 요구사항이 아니다<br>
+    d) analytics, returning rental cars 등은 비기능적 요구사항이 아니다<br>
+    <button onclick="showAnswer('a18')">정답 보기</button>
+    <div id="a18" class="answer">정답: 없음 또는 오류</div>
+  </div>
+
+  <div class="question">
+    <strong>19. Use Case Diagram 설명 중 틀린 것은?</strong><br>
+    a) 시스템과 상호작용하는 외부시스템은 actor로 파악해서는 안된다<br>
+    b) Use case는 사용자의 목표 달성 수단을 기술<br>
+    c) 시스템 액터는 다른 시스템과 연동되는 외부 시스템일 수 있다<br>
+    d) 액터가 인식할 수 없는 내부 기능을 유스케이스로 파악해서는 안된다<br>
+    <button onclick="showAnswer('a19')">정답 보기</button>
+    <div id="a19" class="answer">정답: a</div>
+  </div>
+
+  <div class="question">
+    <strong>20. 학사관리시스템에 적합한 아키텍처 스타일은?</strong><br>
+    a) 클라이언트-서버 스타일<br>
+    b) 데이터 중심형 스타일<br>
+    c) 데이터 흐름 스타일<br>
+    d) Peer to Peer 스타일<br>
+    <button onclick="showAnswer('a20')">정답 보기</button>
+    <div id="a20" class="answer">정답: a</div>
+  </div>
+
+  <div class="question">
+    <strong>23. 파이프 필터 아키텍처에 대한 설명으로 옳은 것은?</strong><br>
+    a) 노드와 간선으로 구성된다<br>
+    b) 입력 → 처리 → 전달 반복 구조<br>
+    c) 계층 모델이라고도 한다<br>
+    d) MVC로 구성된다<br>
+    <button onclick="showAnswer('a23')">정답 보기</button>
+    <div id="a23" class="answer">정답: b</div>
+  </div>
+
+  <div class="question">
+    <strong>24. 아키텍처 스타일과 시스템의 잘못된 짝은?</strong><br>
+    a) 파이프 필터 – 스프레드 시스템<br>
+    b) 계층 구조 – OSI 참조모델<br>
+    c) MVC – 인터넷 쇼핑몰<br>
+    d) 저장소 – 급여시스템<br>
+    <button onclick="showAnswer('a24')">정답 보기</button>
+    <div id="a24" class="answer">정답: a</div>
+  </div>
+
+  <div class="question">
+    <strong>25. 소프트웨어 개발의 전 과정을 체계적이고 정량적으로 다루는 학문은?</strong><br>
+    <button onclick="showAnswer('a25')">정답 보기</button>
+    <div id="a25" class="answer">정답: 소프트웨어 공학</div>
+  </div>
+
+  <div class="question">
+    <strong>26. 소프트웨어 아키텍처를 다양한 관점에서 기술하기 위한 결과물을 무엇이라고 하는가?</strong><br>
+    <button onclick="showAnswer('a26')">정답 보기</button>
+    <div id="a26" class="answer">정답: 아키텍처 설명 (AD)</div>
+  </div>
+
+  <div class="question">
+    <strong>27. 애자일 방법론에서 짧은 주기로 반복되는 개발 단위를 무엇이라고 하는가?</strong><br>
+    <button onclick="showAnswer('a27')">정답 보기</button>
+    <div id="a27" class="answer">정답: 스프린트</div>
+  </div>
+
+  <div class="question">
+    <strong>28. 소프트웨어 개발에서 시스템의 비기능적 특성을 무엇이라고 하는가?</strong><br>
+    <button onclick="showAnswer('a28')">정답 보기</button>
+    <div id="a28" class="answer">정답: 품질 속성</div>
+  </div>
+
+  <div class="question">
+    <strong>29. 사용자 요구사항을 수집하고 분석하는 단계를 무엇이라고 하는가?</strong><br>
+    <button onclick="showAnswer('a29')">정답 보기</button>
+    <div id="a29" class="answer">정답: 요구사항 도출 및 분석</div>
+  </div>
+
+  <div class="question">
+    <strong>30. 애자일 개발에서 개발자와 고객 간의 지속적인 커뮤니케이션을 강조하는 이유는?</strong><br>
+    <button onclick="showAnswer('a30')">정답 보기</button>
+    <div id="a30" class="answer">정답: 요구사항 반영 및 시스템 개선</div>
+  </div>
+
+  <div class="question">
+    <strong>31. 중앙 저장소를 통해 데이터를 공유하는 스타일은?</strong><br>
+    <button onclick="showAnswer('a31')">정답 보기</button>
+    <div id="a31" class="answer">정답: 공유 저장소 스타일</div>
+  </div>
+
+  <div class="question">
+    <strong>32. 사용자 요구사항을 시나리오나 예시로 보완하는 이유는?</strong><br>
+    <button onclick="showAnswer('a32')">정답 보기</button>
+    <div id="a32" class="answer">정답: 요구사항의 모호함 해소</div>
+  </div>
+
+  <div class="question">
+    <strong>33. 개발팀이 스스로 조직을 구성하고 업무를 분담하는 방식은?</strong><br>
+    <button onclick="showAnswer('a33')">정답 보기</button>
+    <div id="a33" class="answer">정답: 자율 조직화 팀</div>
+  </div>
+
+  <div class="question">
+    <strong>34. 시스템의 기능, 성능, 제약조건 등을 문서화한 결과물은?</strong><br>
+    <button onclick="showAnswer('a34')">정답 보기</button>
+    <div id="a34" class="answer">정답: 소프트웨어 요구사항 명세서</div>
+  </div>
+
+  <div class="question">
+    <strong>35. 품질 확보를 위한 핵심 요소 3가지는?</strong><br>
+    <button onclick="showAnswer('a35')">정답 보기</button>
+    <div id="a35" class="answer">정답: 프로세스, 방법, 도구</div>
+  </div>
+
+  <div class="question">
+    <strong>36. 외부 행위자와의 상호작용 관점에서 시스템의 동작을 표현하는 다이어그램은?</strong><br>
+    <button onclick="showAnswer('a36')">정답 보기</button>
+    <div id="a36" class="answer">정답: 유스케이스 다이어그램</div>
+  </div>
+
+  <div class="question">
+    <strong>37. 아키텍처 설계 시 고려해야 할 4가지 요소는?</strong><br>
+    <button onclick="showAnswer('a37')">정답 보기</button>
+    <div id="a37" class="answer">정답: 아키텍처 스타일, 아키텍처 뷰포인트, 아키텍처 설계 프로세스, 품질 기반 설계</div>
+  </div>
+
+  <div class="question">
+    <strong>38. '스프린트 회고(Sprint Retrospective)'의 주요 목적은?</strong><br>
+    <button onclick="showAnswer('a38')">정답 보기</button>
+    <div id="a38" class="answer">정답: 프로세스 개선</div>
+  </div>
+
+  <div class="question">
+    <strong>39. 기능적 요구사항과 비기능적 요구사항을 포함한 문서는?</strong><br>
+    <button onclick="showAnswer('a39')">정답 보기</button>
+    <div id="a39" class="answer">정답: 소프트웨어 요구사항 명세서</div>
+  </div>
+
+  <div class="question">
+    <strong>40. '애자일(Agile)'이 의미하는 바를 가장 잘 나타내는 용어는?</strong><br>
+    <button onclick="showAnswer('a40')">정답 보기</button>
+    <div id="a40" class="answer">정답: 민첩성</div>
+  </div>
+
+  <div class="question">
+    <strong>41. 요구사항, 설계, 코드, 테스트 간의 연관성을 추적하는 것을 무엇이라고 하는가?</strong><br>
+    <button onclick="showAnswer('a41')">정답 보기</button>
+    <div id="a41" class="answer">정답: 추적성</div>
+  </div>
+
+</body>
+</html>
