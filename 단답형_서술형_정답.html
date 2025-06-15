@@ -124,53 +124,97 @@
 
 📌 단답형 정답
 
-1. 테스트 스텁(Stub)  
-2. 뷰(View)  
-3. 상태(State) 패턴  
-4. 의존 역전(DIP, Dependency Inversion Principle)  
-5. 액터(Actor)  
-6. 형상(Configuration)  
-7. 추상 팩토리(Abstract Factory)  
-8. 조건 커버리지(Condition Coverage)
+<button onclick="toggleAnswer('a32')">1번 단답형 정답 보기</button>
+<div id="a32" class="answer" style="display:none;">
+  테스트 스텁(Stub)
+</div>
+
+<button onclick="toggleAnswer('a33')">2번 단답형 정답 보기</button>
+<div id="a33" class="answer" style="display:none;">
+  뷰(View)
+</div>
+
+<button onclick="toggleAnswer('a34')">3번 단답형 정답 보기</button>
+<div id="a34" class="answer" style="display:none;">
+  상태(State) 패턴
+</div>
+
+<button onclick="toggleAnswer('a35')">4번 단답형 정답 보기</button>
+<div id="a35" class="answer" style="display:none;">
+  의존 역전(DIP, Dependency Inversion Principle)
+</div>
+
+<button onclick="toggleAnswer('a36')">5번 단답형 정답 보기</button>
+<div id="a36" class="answer" style="display:none;">
+  액터(Actor)
+</div>
+
+<button onclick="toggleAnswer('a37')">6번 단답형 정답 보기</button>
+<div id="a37" class="answer" style="display:none;">
+  형상(Configuration)
+</div>
+
+<button onclick="toggleAnswer('a38')">7번 단답형 정답 보기</button>
+<div id="a38" class="answer" style="display:none;">
+  추상 팩토리(Abstract Factory)
+</div>
+
+<button onclick="toggleAnswer('a39')">8번 단답형 정답 보기</button>
+<div id="a39" class="answer" style="display:none;">
+  조건 커버리지(Condition Coverage)
+</div>
 
 
 
 📌 서술형 정답
 
-[서술형 정답 요약]
+<button onclick="toggleAnswer('a40')">1번 서술형 정답 보기</button>
+<div id="a40" class="answer" style="display:none;">
+  <strong>블랙박스 테스트 설계</strong><br>
+  - 동등 분할:<br>
+  &nbsp;&nbsp;- 입력: 10 → 결과: 미성년자<br>
+  &nbsp;&nbsp;- 입력: 25 → 결과: 성인<br>
+  - 경계값 분석:<br>
+  &nbsp;&nbsp;- 입력: 18 → 결과: 미성년자<br>
+  &nbsp;&nbsp;- 입력: 19 → 결과: 성인
+</div>
 
-1. **블랙박스 테스트 설계**
-- 동등 분할:  
-  - 입력: 10 → 결과: 미성년자  
-  - 입력: 25 → 결과: 성인  
-- 경계값 분석:  
-  - 입력: 18 → 결과: 미성년자  
-  - 입력: 19 → 결과: 성인  
+<button onclick="toggleAnswer('a41')">2번 서술형 정답 보기</button>
+<div id="a41" class="answer" style="display:none;">
+  <strong>소프트웨어 아키텍처 중요성과 특징</strong><br>
+  - 중요성: 품질 속성, 이해관계자 요구 반영, 개발 효율성<br>
+  - 특징:<br>
+  &nbsp;&nbsp;- 모듈성(Modularity): 변경 용이<br>
+  &nbsp;&nbsp;- 확장성(Scalability): 기능 추가에 유리<br>
+  &nbsp;&nbsp;- 유지보수성(Maintainability): 이해 용이
+</div>
 
-2. **소프트웨어 아키텍처 중요성과 특징**
-- 중요성: 품질 속성, 이해관계자 요구 반영, 개발 효율성  
-- 특징:  
-  - 모듈성(Modularity): 변경 용이  
-  - 확장성(Scalability): 기능 추가에 유리  
-  - 유지보수성(Maintainability): 이해 용이
+<button onclick="toggleAnswer('a42')">3번 서술형 정답 보기</button>
+<div id="a42" class="answer" style="display:none;">
+  <strong>SRP에 따른 Order 클래스 재설계 예시</strong><br>
+  - Order: 주문 정보 저장<br>
+  - PaymentProcessor: 결제 처리<br>
+  - InventoryChecker: 재고 확인<br>
+  - ShippingManager: 배송 정보 관리
+</div>
 
-3. **SRP에 따른 Order 클래스 재설계 예시**
-- Order: 주문 정보 저장  
-- PaymentProcessor: 결제 처리  
-- InventoryChecker: 재고 확인  
-- ShippingManager: 배송 정보 관리
+<button onclick="toggleAnswer('a43')">4번 서술형 정답 보기</button>
+<div id="a43" class="answer" style="display:none;">
+  <strong>소프트웨어 품질 비용</strong><br>
+  - 예방 비용: 리뷰, 교육<br>
+  - 평가 비용: 테스트<br>
+  - 실패 비용: 오류 수정<br>
+  - 설명: 초기에 예방/평가 투자 → 결함 증폭 감소 → 총 비용 절감
+</div>
 
-4. **소프트웨어 품질 비용**
-- 예방 비용: 리뷰, 교육  
-- 평가 비용: 테스트  
-- 실패 비용: 오류 수정  
-- 설명: 초기에 예방/평가 투자 → 결함 증폭 감소 → 총 비용 절감
-
-5. **Function Point Estimation**
-A. FP = (기능별 가중치 총합 × 복잡도 계수)  
-B.  
-- Pros: 요구사항 기반, 언어 독립  
-- Cons: 초기 정보 부족 시 부정확, 경험 필요
+<button onclick="toggleAnswer('a44')">5번 서술형 정답 보기</button>
+<div id="a44" class="answer" style="display:none;">
+  <strong>Function Point Estimation</strong><br>
+  A. FP = (기능별 가중치 총합 × 복잡도 계수)<br>
+  B.<br>
+  - Pros: 요구사항 기반, 언어 독립<br>
+  - Cons: 초기 정보 부족 시 부정확, 경험 필요
+</div>
 
     </pre>
 </body>
