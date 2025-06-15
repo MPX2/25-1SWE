@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>단답형 및 서술형 정답</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; background-color: #fdfdfd; }
+        h2 { color: #333366; }
+        pre { background-color: #f4f4f4; padding: 15px; border-radius: 5px; border: 1px solid #ccc; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h2>소공 기말고사 정답</h2>
+    <pre>
+
+01. ④  
+02. ②  
+03. ①  
+04. ②  
+05. ②  
+06. ④  
+07. ③  
+08. ③  
+09. ③  
+10. ②  
+11. ③  
+12. ②  
+13. ③  
+14. ①  
+15. ④  
+16. ④  
+17. ④  
+18. ④  
+19. ③  
+20. ②  
+21. ②  
+22. ③  
+23. ③  
+24. ③  
+25. ④  
+26. (이미지 기반 - 답 유추 어려움)  
+27. ④  
+28. ②  
+29. ②  
+30. ④  
+31. ① (추정: UML 일반화 관계)
+
+
+
+
+📌 단답형 정답
+
+1. 테스트 스텁 (Stub)  
+2. 뷰포인트 (Viewpoint)  
+3. 상태 (State) 패턴  
+4. 의존성 역전 원칙 (DIP, Dependency Inversion Principle)  
+5. 액터 (Actor)  
+6. 형상 관리 (Configuration Management)  
+7. 추상 팩토리 (Abstract Factory) 패턴  
+8. 조건 커버리지 (Condition Coverage)  
+
+
+📌 서술형 정답
+
+1. 동등 분할 & 경계값 분석 테스트 케이스 설계
+
+- 동등 분할 테스트:
+  - 입력: 25 → 기대 결과: 성인
+  - 입력: 10 → 기대 결과: 미성년자
+- 경계값 분석 테스트:
+  - 입력: 18 → 기대 결과: 미성년자
+  - 입력: 19 → 기대 결과: 성인
+
+설명: 동등 분할은 입력을 유효/무효 범위로 나누고, 경계값 분석은 조건 변경의 경계 지점을 중심으로 테스트한다.
+
+
+2. 좋은 소프트웨어 아키텍처의 중요성과 특징
+
+- 중요성:
+  - 유지보수성 향상
+  - 이해도 증가
+  - 확장성과 유연성 확보
+
+- 특징:
+  - 모듈화(Modularity): 기능 단위로 분리해 개발 및 유지보수 용이
+  - 재사용성(Reusability): 구조나 구성요소의 재사용 가능
+  - 이해 용이성(Understandability): 설계 구조가 명확
+  - 유연성(Flexibility): 요구사항 변화에 대응하기 쉬움
+
+
+3. 단일 책임 원칙(SRP)을 적용한 Order 클래스 재설계
+
+- OrderProcessor: 주문 전체 처리
+- PaymentService: 결제 처리 책임
+- InventoryChecker: 재고 확인 담당
+- ShippingManager: 배송 정보 관리
+
+각 클래스는 하나의 책임만 가지며, 변경 사유가 명확히 분리된다.
+
+
+4. 품질 비용과 결함 증폭 개념
+
+- 품질 비용 구성:
+  - 예방 비용 (Prevention Costs): 교육, 표준 도입 등
+  - 평가 비용 (Appraisal Costs): 테스트, 리뷰 등
+  - 실패 비용 (Failure Costs): 결함으로 인한 재작업, 고객 불만
+
+- 결함 증폭(Defect Amplification):
+  - 초기 결함이 후속 단계로 갈수록 수정 비용이 기하급수적으로 증가함
+  - 초기에 예방 및 평가 비용을 충분히 투자하면, 장기적으로 전체 개발 비용이 절감됨
+    </pre>
+</body>
+</html>
